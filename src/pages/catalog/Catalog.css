@@ -1,0 +1,140 @@
+/* ============================= */
+/*          ESTILOS GERAIS       */
+/* ============================= */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Container principal */
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilização do produto */
+.product-item {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do produto */
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Nome do produto */
+.product-item h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Preço do produto */
+.product-item p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+/* Controles de navegação */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 15px;
+  flex-direction: row;
+}
+
+.nav-buttons button {
+  background-color: #f1c40f;
+  color: black;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-buttons button:hover {
+  background-color: #d4ac0d;
+  transform: scale(1.1);
+}
+
+/* ============================= */
+/*         RESPONSIVIDADE        */
+/* ============================= */
+
+/* Tablets (telas entre 768px e 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .catalog-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-item {
+    width: 45%;
+    max-width: 350px;
+  }
+
+  .nav-buttons {
+    flex-direction: row;
+  }
+}
+
+/* Telas grandes (PC e notebooks acima de 1024px) */
+@media (min-width: 1025px) {
+  .catalog-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .product-item {
+    width: 30%;
+    max-width: 300px;
+  }
+}
+
+/* Mobile (telas menores que 768px) */
+@media (max-width: 767px) {
+  .catalog-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .product-item {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+  }
+
+  .nav-buttons button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+/* ============================= */
+/*         ESTILIZAÇÃO BASE      */
+/* ============================= */
+
+/* Estilização do container principal */
+.add-product-container {
+  background-color: #1c1c1c;
+  color: white;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+/* Estilo do título */
+.add-product-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Estilo do formulário */
+.add-product-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs e Select */
+.add-product-container input,
+.add-product-container select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Botão de salvar */
+.add-product-container button {
+  background-color: #f1c40f;
+  color: black;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-product-container button:hover {
+  background-color: #d4ac0d;
+}
+
+/* ============================= */
+/*         RESPONSIVIDADE        */
+/* ============================= */
+
+/* Telas maiores (PC - acima de 1024px) */
+@media (min-width: 1025px) {
+  .add-product-container {
+      max-width: 500px;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .add-product-container {
+      max-width: 450px;
+  }
+}
+
+/* Mobile (até 767px) */
+@media (max-width: 767px) {
+  .add-product-container {
+      max-width: 90%; /* Usa 90% da largura para não ficar apertado */
+      margin: 20px auto;
+      padding: 15px;
+  }
+
+  .add-product-container h2 {
+      font-size: 20px;
+  }
+
+  .add-product-container input,
+  .add-product-container select {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .add-product-container button {
+      font-size: 16px;
+      padding: 10px;
+  }
+}

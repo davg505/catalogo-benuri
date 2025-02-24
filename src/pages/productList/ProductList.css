@@ -1,0 +1,133 @@
+/* ============================= */
+/*         ESTILIZAÇÃO BASE      */
+/* ============================= */
+
+.product-list-container {
+    background-color: #1c1c1c;
+    color: white;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+  }
+  
+  .product-list-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Estilização da tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f1c40f;
+    color: black;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #444;
+  }
+  
+  td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  /* Botões */
+  button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+  }
+  
+  .edit-btn {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .remove-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* ============================= */
+  /*         RESPONSIVIDADE        */
+  /* ============================= */
+  
+  /* 📌 PC (acima de 1024px) */
+  @media (min-width: 1025px) {
+    .product-list-container {
+      max-width: 900px;
+    }
+  }
+  
+  /* 📌 Tablets (768px - 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .product-list-container {
+      max-width: 90%;
+      padding: 15px;
+    }
+    
+    th, td {
+      padding: 8px;
+    }
+    
+    td img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  
+  /* 📌 Mobile (até 767px) */
+  @media (max-width: 767px) {
+    .product-list-container {
+      max-width: 95%;
+      padding: 10px;
+    }
+  
+    table {
+      font-size: 12px;
+    }
+  
+    th, td {
+      padding: 6px;
+    }
+  
+    td img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    /* Deixa a tabela rolável no celular */
+    .product-list-container table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    /* Ajustando os botões para ficarem melhores no mobile */
+    button {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
+  
