@@ -1,13 +1,16 @@
 {
   "name": "catalogo-benuri",
+  "homepage": "https://davg505.github.io/catalogo-benuri/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^19.0.0",
