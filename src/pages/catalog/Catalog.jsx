@@ -23,6 +23,8 @@ export function Catalog({ products }) {
       <div className="product-item">
         <img src={product.image} alt={product.name} />
         <h3>{product.name}</h3>
+        <h3> Codigo: {product.codigo}</h3>
+        <h3>Tipo: {product.category}</h3>
         <p>Preço: R$ {product.price}</p>
       </div>
       <div className="nav-buttons">

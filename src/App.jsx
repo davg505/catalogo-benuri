@@ -3,12 +3,18 @@ import { useState } from "react";
 import { AddProduct } from "./pages/addProduct/AddProduct";
 import { Catalog } from "./pages/catalog/Catalog";
 import { ProductList } from "./pages/productList/ProductList";
+import logo from './image/2 lugares.png';
+import logo1 from './image/shopping.webp';
+import logo2 from './image/2.webp';
 
 export default function App() {
+
   const [products, setProducts] = useState([
-    { id: 1, name: "Sofá Luxo", price: "1200", category: "sofa", image: "sofa.jpg" },
-    { id: 2, name: "Mesa de Jantar", price: "800", category: "cozinha", image: "mesa.jpg" },
+    { id: 1, name: "Sofá Belgica 1,50M 2 Lugares", price: "1200", codigo: "1200", category: "sofa", image: logo },
+    { id: 2, name: "Mesa de Jantar", price: "800", category: "cozinha", image: logo1 },
+    { id: 3, name: "Gaurda Roupa ", price: "1200", category: "Quarto", image: logo2 },
   ]);
+ 
 
   const addProduct = (product) => {
     setProducts([...products, { ...product, id: products.length + 1 }]);
