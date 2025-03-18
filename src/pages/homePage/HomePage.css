@@ -1,0 +1,56 @@
+/* ============================= */
+/*          ESTILOS GERAIS       */
+/* ============================= */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+
+.logo {
+    width: 175px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-bottom: 30px;
+  } 
+
+.homepage-container {
+  background-color: #1c1c1c;
+  color: white;
+  font-family: Arial, sans-serif;
+  max-width: 250px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  }
+  
+  /* Estilos para os botões das categorias */
+  .homepage-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .homepage-buttons button {
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .homepage-buttons button:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.1);
+  }
+  

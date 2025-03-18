@@ -3,6 +3,8 @@ import { useState } from "react";
 import { AddProduct } from "./pages/addProduct/AddProduct";
 import { Catalog } from "./pages/catalog/Catalog";
 import { ProductList } from "./pages/productList/ProductList";
+import { Category } from "./pages/category/Category";
+import { HomePage } from "./pages/homePage/HomePage";
 import logo from './image/2 lugares.png';
 import logo1 from './image/shopping.webp';
 import logo2 from './image/2.webp';
@@ -37,6 +39,8 @@ export default function App() {
           <Route path="/add" element={<AddProduct addProduct={addProduct} />} />
           <Route path="/catalog" element={<Catalog products={products} />} />
           <Route path="/products" element={<ProductList products={products} editProduct={editProduct} removeProduct={removeProduct} />} />
+          <Route path="/category" element={<Category/>} />
+          <Route path="/homePage" element={<HomePage/>} />
         </Routes>
       </div>
     </Router>
