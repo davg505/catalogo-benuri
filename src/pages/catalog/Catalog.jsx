@@ -23,7 +23,7 @@ export function Catalog({ products }) {
     <div className="catalog-container">
        
       <div className="product-item">
-      <img src={logoBenuri} alt="Logo Benuri" className="logo" />
+        <img src={logoBenuri} alt="Logo Benuri" className="logo" />
         <img src={product.image} alt={product.name} />
         <h3>{product.name}</h3>
         <h3> Codigo: {product.codigo}</h3>
