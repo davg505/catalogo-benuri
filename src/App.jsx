@@ -3,7 +3,7 @@ import { AppRoutes } from "./AppRoutes"; // Verifique se o nome e o caminho estÃ
 
 const App = () => {
   return (
-    <BrowserRouter basename="/catalogo-benuri/">
+    <BrowserRouter basename="/catalogo-benuri">
       <AppRoutes />
     </BrowserRouter>
   );
