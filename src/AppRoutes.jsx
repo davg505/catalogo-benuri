@@ -32,11 +32,11 @@ export const AppRoutes = () => {
 
     return (
         <Routes>
-           <Route path="/add" element={<AddProduct addProduct={addProduct} />} />
-            <Route path="/catalog" element={<Catalog products={products} />} />
-            <Route path="/products" element={<ProductList products={products} editProduct={editProduct} removeProduct={removeProduct} />} />
-            <Route path="/category" element={<Category />} />
-            <Route path="/homePage" element={<HomePage />} />
+             <Route path="/" element={<HomePage />} /> {/* Adicione essa linha */}
+            <Route path="add" element={<AddProduct />} />
+            <Route path="catalog" element={<Catalog />} />
+            <Route path="products" element={<ProductList />} />
+            <Route path="category" element={<Category />} />
         </Routes>
     );
 };
